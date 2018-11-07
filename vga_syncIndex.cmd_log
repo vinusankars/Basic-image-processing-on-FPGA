@@ -1,0 +1,256 @@
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim vga_syncIndex.ngc vga_syncIndex_synthesis.v 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 
+xst -intstyle ise -ifn "G:/DIGITAL/FINAL/vga_syncIndex.xst" -ofn "G:/DIGITAL/FINAL/vga_syncIndex.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vvga.ucf -p xc3s500e-fg320-4 vga_syncIndex.ngc vga_syncIndex.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o vga_syncIndex_map.ncd vga_syncIndex.ngd vga_syncIndex.pcf 
+par -w -intstyle ise -ol high -t 1 vga_syncIndex_map.ncd vga_syncIndex.ncd vga_syncIndex.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vga_syncIndex.twx vga_syncIndex.ncd -o vga_syncIndex.twr vga_syncIndex.pcf -ucf vvga.ucf 
+bitgen -intstyle ise -f vga_syncIndex.ut vga_syncIndex.ncd 

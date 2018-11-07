@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/wm.v"
+verilog work "ipcore_dir/bram1.v"
+verilog work "ipcore_dir/bram.v"
+verilog work "vga.v"

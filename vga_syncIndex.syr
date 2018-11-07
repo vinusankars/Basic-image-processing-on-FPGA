@@ -1,0 +1,611 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: vga_syncIndex.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vga_syncIndex.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vga_syncIndex"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : vga_syncIndex
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/wm.v" in library work
+Compiling verilog file "ipcore_dir/bram1.v" in library work
+Module <wm> compiled
+Compiling verilog file "ipcore_dir/bram.v" in library work
+Module <bram1> compiled
+Compiling verilog file "vga.v" in library work
+Module <bram> compiled
+Module <vga_syncIndex> compiled
+No errors in compilation
+Analysis of file <"vga_syncIndex.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <vga_syncIndex> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <vga_syncIndex>.
+WARNING:Xst:2211 - "ipcore_dir/bram.v" line 50: Instantiating black box module <bram>.
+WARNING:Xst:2211 - "ipcore_dir/bram1.v" line 58: Instantiating black box module <bram1>.
+WARNING:Xst:2211 - "ipcore_dir/wm.v" line 66: Instantiating black box module <wm>.
+Module <vga_syncIndex> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_syncIndex>.
+    Related source file is "vga.v".
+WARNING:Xst:653 - Signal <wea> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:646 - Signal <tred> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tgreen> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tblue> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <read> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <r2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <in1> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
+WARNING:Xst:646 - Signal <g2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <b2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "vga.v" line 175: The result of a 8x2-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 177: The result of a 8x3-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 179: The result of a 8x4-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 188: The result of a 8x2-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 190: The result of a 8x3-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 192: The result of a 8x4-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 201: The result of a 8x2-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 203: The result of a 8x3-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "vga.v" line 205: The result of a 8x4-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 2-bit register for signal <blue>.
+    Found 3-bit register for signal <green>.
+    Found 10-bit up counter for signal <hc>.
+    Found 1-bit register for signal <hsync>.
+    Found 3-bit register for signal <red>.
+    Found 10-bit up counter for signal <vc>.
+    Found 1-bit register for signal <vsync>.
+    Found 8-bit adder for signal <$add0000> created at line 173.
+    Found 8-bit adder for signal <$add0001> created at line 175.
+    Found 8-bit adder for signal <$add0002> created at line 177.
+    Found 8-bit adder for signal <$add0003> created at line 179.
+    Found 8-bit adder for signal <$add0004> created at line 186.
+    Found 8-bit adder for signal <$add0005> created at line 188.
+    Found 8-bit adder for signal <$add0006> created at line 190.
+    Found 8-bit adder for signal <$add0007> created at line 192.
+    Found 8-bit adder for signal <$add0008> created at line 199.
+    Found 8-bit adder for signal <$add0009> created at line 201.
+    Found 8-bit adder for signal <$add0010> created at line 203.
+    Found 8-bit adder for signal <$add0011> created at line 205.
+    Found 12-bit up counter for signal <addra>.
+    Found 12-bit comparator less for signal <addra$cmp_lt0000> created at line 267.
+    Found 9-bit up counter for signal <addra1>.
+    Found 9-bit comparator less for signal <addra1$cmp_lt0000> created at line 131.
+    Found 1-bit register for signal <hblank>.
+    Found 24-bit register for signal <in2>.
+    Found 12-bit comparator less for signal <in2_0$cmp_lt0000> created at line 142.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_0$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_0$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_1$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_1$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_10$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_10$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_11$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_11$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_12$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_12$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_13$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_13$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_14$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_14$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_15$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_15$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_16$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_16$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_17$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_17$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_18$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_18$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_19$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_19$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_2$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_2$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_20$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_20$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_21$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_21$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_22$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_22$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_23$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_23$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_3$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_3$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_4$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_4$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_5$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_5$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_6$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_6$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_7$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_7$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_8$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_8$mux0001>.
+    Found 1-bit 4-to-1 multiplexer for signal <in2_9$mux0000>.
+    Found 1-bit 8-to-1 multiplexer for signal <in2_9$mux0001>.
+    Found 7-bit adder for signal <old_A_11$addsub0000> created at line 249.
+    Found 10-bit comparator greatequal for signal <old_out_4$cmp_ge0000> created at line 113.
+    Found 10-bit comparator greatequal for signal <old_out_4$cmp_ge0001> created at line 113.
+    Found 10-bit comparator lessequal for signal <old_out_4$cmp_le0000> created at line 113.
+    Found 10-bit comparator lessequal for signal <old_out_4$cmp_le0001> created at line 113.
+    Found 1-bit register for signal <pcount>.
+    Found 10-bit comparator less for signal <red$cmp_lt0000> created at line 257.
+    Found 10-bit comparator less for signal <red$cmp_lt0001> created at line 257.
+    Found 8x2-bit multiplier for signal <temp$mult0009> created at line 175.
+    Found 8x3-bit multiplier for signal <temp$mult0010> created at line 177.
+    Found 8x4-bit multiplier for signal <temp$mult0011> created at line 179.
+    Found 8x2-bit multiplier for signal <temp$mult0012> created at line 188.
+    Found 8x3-bit multiplier for signal <temp$mult0013> created at line 190.
+    Found 8x4-bit multiplier for signal <temp$mult0014> created at line 192.
+    Found 8x2-bit multiplier for signal <temp$mult0015> created at line 201.
+    Found 8x3-bit multiplier for signal <temp$mult0016> created at line 203.
+    Found 8x4-bit multiplier for signal <temp$mult0017> created at line 205.
+    Found 1-bit register for signal <vblank>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred  37 D-type flip-flop(s).
+	inferred  17 Adder/Subtractor(s).
+	inferred   9 Multiplier(s).
+	inferred   9 Comparator(s).
+	inferred  48 Multiplexer(s).
+Unit <vga_syncIndex> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 9
+ 8x2-bit multiplier                                    : 3
+ 8x3-bit multiplier                                    : 3
+ 8x4-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 17
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 16
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 32
+ 1-bit register                                        : 29
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+# Comparators                                          : 9
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+ 12-bit comparator less                                : 2
+ 9-bit comparator less                                 : 1
+# Multiplexers                                         : 48
+ 1-bit 4-to-1 multiplexer                              : 24
+ 1-bit 8-to-1 multiplexer                              : 24
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/bram.ngc>.
+Reading core <ipcore_dir/bram1.ngc>.
+Reading core <ipcore_dir/wm.ngc>.
+Loading core <bram> for timing and area information for instance <inpic>.
+Loading core <bram1> for timing and area information for instance <outpic>.
+Loading core <wm> for timing and area information for instance <water>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 9
+ 8x2-bit multiplier                                    : 3
+ 8x3-bit multiplier                                    : 3
+ 8x4-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 17
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 16
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+# Comparators                                          : 9
+ 10-bit comparator greatequal                          : 2
+ 10-bit comparator less                                : 2
+ 10-bit comparator lessequal                           : 2
+ 12-bit comparator less                                : 2
+ 9-bit comparator less                                 : 1
+# Multiplexers                                         : 48
+ 1-bit 4-to-1 multiplexer                              : 24
+ 1-bit 8-to-1 multiplexer                              : 24
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <vga_syncIndex> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vga_syncIndex, actual ratio is 7.
+FlipFlop addra_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : vga_syncIndex.ngr
+Top Level Output File Name         : vga_syncIndex
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 769
+#      GND                         : 4
+#      INV                         : 8
+#      LUT1                        : 38
+#      LUT2                        : 41
+#      LUT2_D                      : 2
+#      LUT2_L                      : 3
+#      LUT3                        : 129
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 262
+#      LUT4_D                      : 2
+#      LUT4_L                      : 10
+#      MULT_AND                    : 3
+#      MUXCY                       : 106
+#      MUXF5                       : 47
+#      VCC                         : 4
+#      XORCY                       : 108
+# FlipFlops/Latches                : 85
+#      FD                          : 25
+#      FDE                         : 6
+#      FDR                         : 8
+#      FDRE                        : 46
+# RAMS                             : 9
+#      RAMB16_S36_S36              : 3
+#      RAMB16_S9_S9                : 6
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 5
+#      OBUF                        : 31
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      270  out of   4656     5%  
+ Number of Slice Flip Flops:             77  out of   9312     0%  
+ Number of 4 input LUTs:                497  out of   9312     5%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    232    15%  
+    IOB Flip Flops:                       8
+ Number of BRAMs:                         9  out of     20    45%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                       | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                       | 40    |
+inpic/N1                           | NONE(inpic/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram)  | 4     |
+outpic/N1                          | NONE(outpic/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp9x9.ram) | 4     |
+water/N1                           | NONE(water/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram)| 1     |
+pcount1                            | BUFG                                                                                                                        | 54    |
+-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.641ns (Maximum Frequency: 150.573MHz)
+   Minimum input arrival time before clock: 6.817ns
+   Maximum output required time after clock: 9.104ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.641ns (frequency: 150.573MHz)
+  Total number of paths / destination ports: 679 / 69
+-------------------------------------------------------------------------
+Delay:               6.641ns (Levels of Logic = 3)
+  Source:            hc_1 (FF)
+  Destination:       vblank (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: hc_1 to vblank
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.591   0.844  hc_1 (hc_1)
+     LUT4:I0->O            1   0.704   0.499  hreset1_SW1 (N56)
+     LUT4:I1->O           26   0.704   1.264  hreset (hc_and0000)
+     LUT4:I3->O            1   0.704   0.420  vsyncon1 (vsyncon)
+     FDRE:R                    0.911          vsync
+    ----------------------------------------
+    Total                      6.641ns (3.614ns logic, 3.027ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pcount1'
+  Clock period: 6.549ns (frequency: 152.695MHz)
+  Total number of paths / destination ports: 386 / 68
+-------------------------------------------------------------------------
+Delay:               6.549ns (Levels of Logic = 7)
+  Source:            addra_0 (FF)
+  Destination:       addra_0 (FF)
+  Source Clock:      pcount1 falling
+  Destination Clock: pcount1 falling
+
+  Data Path: addra_0 to addra_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.591   1.057  addra_0 (addra_0)
+     LUT2:I0->O            1   0.704   0.000  Mcompar_addra_cmp_lt0000_lut<0> (Mcompar_addra_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_addra_cmp_lt0000_cy<0> (Mcompar_addra_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_addra_cmp_lt0000_cy<1> (Mcompar_addra_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_addra_cmp_lt0000_cy<2> (Mcompar_addra_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_addra_cmp_lt0000_cy<3> (Mcompar_addra_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.459   0.499  Mcompar_addra_cmp_lt0000_cy<4> (Mcompar_addra_cmp_lt0000_cy<4>)
+     LUT2:I1->O           13   0.704   0.983  addra_and00001 (addra_and0000)
+     FDRE:R                    0.911          addra_0
+    ----------------------------------------
+    Total                      6.549ns (4.010ns logic, 2.539ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pcount1'
+  Total number of paths / destination ports: 210 / 24
+-------------------------------------------------------------------------
+Offset:              6.817ns (Levels of Logic = 6)
+  Source:            b<0> (PAD)
+  Destination:       in2_0 (FF)
+  Destination Clock: pcount1 falling
+
+  Data Path: b<0> to in2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   1.218   1.443  b_0_IBUF (b_0_IBUF)
+     LUT3:I0->O            1   0.704   0.000  Mmux_in2_2_mux0001_10 (Mmux_in2_2_mux0001_10)
+     MUXF5:I1->O           1   0.321   0.499  Mmux_in2_2_mux0001_9_f5 (Mmux_in2_2_mux0001_9_f5)
+     LUT3:I1->O            1   0.704   0.000  Mmux_in2_2_mux0001_6 (Mmux_in2_2_mux0001_6)
+     MUXF5:I1->O           1   0.321   0.595  Mmux_in2_2_mux0001_5_f5 (Mmux_in2_2_mux0001_5_f5)
+     LUT4:I0->O            1   0.704   0.000  choice<2> (in2_2_mux0001)
+     FD:D                      0.308          in2_2
+    ----------------------------------------
+    Total                      6.817ns (4.280ns logic, 2.537ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 35 / 23
+-------------------------------------------------------------------------
+Offset:              9.104ns (Levels of Logic = 4)
+  Source:            hc_1 (FF)
+  Destination:       blank (PAD)
+  Source Clock:      clk rising
+
+  Data Path: hc_1 to blank
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.591   0.844  hc_1 (hc_1)
+     LUT4:I0->O            1   0.704   0.499  hreset1_SW1 (N56)
+     LUT4:I1->O           26   0.704   1.339  hreset (hc_and0000)
+     LUT3:I1->O            2   0.704   0.447  blank1 (blank_OBUF)
+     OBUF:I->O                 3.272          blank_OBUF (blank)
+    ----------------------------------------
+    Total                      9.104ns (5.975ns logic, 3.129ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pcount1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            blue_1 (FF)
+  Destination:       blue<1> (PAD)
+  Source Clock:      pcount1 falling
+
+  Data Path: blue_1 to blue<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.420  blue_1 (blue_1)
+     OBUF:I->O                 3.272          blue_1_OBUF (blue<1>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.23 secs
+ 
+--> 
+
+Total memory usage is 275708 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
